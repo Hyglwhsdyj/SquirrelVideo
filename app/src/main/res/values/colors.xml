@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_1">#f7af00</color>
+    <color name="bg_2">#00aeef</color>
+    <color name="bg_3">#8dc800</color>
+    <color name="bg_4">#ff613c</color>
+    <color name="bg_5">#e1df2d</color>
+    <color name="bg_6">#1cd7cc</color>
+
+    <color name="white">#fff</color>
+    <color name="ss_transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ff6600</color>
+
+    <color name="func_top_btn">#333</color>
+
+    <color name="dlg_text_confirm">#ff6600</color>
+
+    <color name="local_media_dialog_message">#333333</color>
+</resources>

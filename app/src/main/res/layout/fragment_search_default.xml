@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 3 刚进来后的默认布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content_down_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dimen140"
+    android:paddingRight="@dimen/dimen140"
+    android:paddingTop="@dimen/dimen20">
+
+    <!-- 4 热门搜索布局 -->
+    <LinearLayout
+        android:layout_width="@dimen/dimen420"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_dimen_28" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen1"
+            android:layout_marginBottom="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen30"
+            android:background="#20ffffff" />
+
+        <ListView
+            android:id="@+id/lv_hot_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/ss_transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/ss_transparent"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+
+    <!-- 4 历史记录布局 -->
+    <LinearLayout
+        android:layout_width="@dimen/dimen420"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索记录"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_28" />
+
+            <TextView
+                android:id="@+id/clear_search_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="清空"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_28" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen1"
+            android:layout_marginBottom="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen30"
+            android:background="#20ffffff" />
+
+        <ListView
+            android:id="@+id/lv_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/ss_transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/ss_transparent"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

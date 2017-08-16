@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 3 搜索没结果的布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content_down_no_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_content_down_no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen100"
+        android:background="@drawable/movie_icon_default" />
+
+    <TextView
+        android:id="@+id/tv_content_down_no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_content_down_no_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen50"
+        android:gravity="center"
+        android:text="还没有搜到您想要的内容\n请使用关键字试试~"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_dimen_48" />
+
+</RelativeLayout>

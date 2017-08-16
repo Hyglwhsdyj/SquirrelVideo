@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/movie_loading01"
+    android:duration="900"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="-1"
+    android:toDegrees="359" />
+
+    <!--
+    <animation-dataList xmlns:android="http://schemas.android.com/apk/res/android"
+        android:oneshot="false">
+
+        <item
+            android:drawable="@drawable/movie_loading01"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading02"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading03"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading04"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading05"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading06"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading07"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading08"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading09"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading10"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading11"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading12"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading13"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading14"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading15"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading16"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading17"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading18"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading19"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading20"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading21"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading22"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading23"
+            android:duration="50" />
+        <item
+            android:drawable="@drawable/movie_loading24"
+            android:duration="50" />
+
+    </animation-dataList>-->

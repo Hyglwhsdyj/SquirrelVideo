@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_whole"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0"
+        android:layout_weight="29">
+
+        <ImageView
+            android:id="@+id/iv_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/dimen50"
+            android:paddingLeft="@dimen/dimen60"
+            android:paddingRight="@dimen/dimen80"
+            android:paddingTop="@dimen/dimen50"
+            android:scaleType="centerCrop"
+            android:src="@drawable/go_back_selector" />
+
+        <LinearLayout
+            android:id="@+id/lv_funcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/func_act_top_btn_left_uncheck_sharp"
+                android:gravity="center"
+                android:text="历史记录"
+                android:textSize="@dimen/font_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_favority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/func_act_top_btn_middle_uncheck_sharp"
+                android:gravity="center"
+                android:text="我的收藏"
+                android:textSize="@dimen/font_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/func_act_top_btn_right_uncheck_sharp"
+                android:gravity="center"
+                android:text="我的下载"
+                android:textSize="@dimen/font_dimen_28" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_modify_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:drawableLeft="@drawable/delete_selector"
+            android:drawablePadding="@dimen/dimen10"
+            android:paddingBottom="@dimen/dimen10"
+            android:paddingRight="@dimen/dimen70"
+            android:paddingTop="@dimen/dimen10"
+            android:text="编辑"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_dimen_28" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0"
+        android:layout_weight="131">
+
+        <ListView
+            android:id="@+id/lv_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen70"
+            android:layout_marginRight="@dimen/dimen70"
+            android:cacheColorHint="@color/ss_transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/ss_transparent"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen70"
+            android:layout_marginRight="@dimen/dimen70"
+            android:cacheColorHint="@color/ss_transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/ss_transparent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_no_contant_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen85"
+            android:background="@drawable/movie_icon_default" />
+
+        <TextView
+            android:id="@+id/tv_no_contant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_no_contant_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen50"
+            android:text="还没有历史记录"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_dimen_48" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sdcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80"
+            android:layout_alignParentBottom="true"
+            android:background="#b5000000"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_already_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen200"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_28" />
+
+            <TextView
+                android:id="@+id/tv_available_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen50"
+                android:layout_toRightOf="@id/tv_already_use"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_28" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

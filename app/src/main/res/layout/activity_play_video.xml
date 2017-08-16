@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.vov.vitamio.widget.CenterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal">
+
+    <com.songshu.squirrelvideo.player.VideoView
+        android:id="@+id/new_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:saveEnabled="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!-- 缓冲提示信息 -->
+        <LinearLayout
+            android:id="@+id/new_player_view_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/new_probar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/play_video_loading_anim" />
+
+            <TextView
+                android:id="@+id/new_player_buffer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:text="@string/video_layout_before_loading"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_32" />
+        </LinearLayout>
+
+        <!-- 重新加载视频 -->
+
+        <LinearLayout
+            android:id="@+id/new_player_reload_video_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无法连接到网络"
+                android:textColor="#fff"
+                android:textSize="@dimen/dimen32" />
+
+            <TextView
+                android:id="@+id/new_player_reload_tv_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen30"
+                android:background="@drawable/play_video_retry_btn_selector"
+                android:gravity="center"
+                android:text="点击重试"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_32" />
+
+        </LinearLayout>
+
+        <!-- 返回键 -->
+        <ImageButton
+            android:id="@+id/new_player_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/dimen40"
+            android:paddingTop="@dimen/dimen20"
+            android:paddingBottom="@dimen/dimen20"
+            android:paddingRight="@dimen/dimen40"
+            android:background="@color/ss_transparent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/go_back_selector" />
+    </RelativeLayout>
+
+</io.vov.vitamio.widget.CenterLayout>

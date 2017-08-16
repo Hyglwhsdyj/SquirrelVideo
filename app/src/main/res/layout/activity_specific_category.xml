@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_whole"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0"
+        android:layout_weight="29">
+
+        <ImageView
+            android:id="@+id/iv_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen60"
+            android:paddingBottom="@dimen/dimen50"
+            android:paddingRight="@dimen/dimen80"
+            android:paddingTop="@dimen/dimen50"
+            android:scaleType="centerCrop"
+            android:src="@drawable/go_back_selector" />
+
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部分类"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_dimen_36" />
+
+        <RelativeLayout
+            android:id="@+id/rl_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen70"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/category_select_btn_delete_sharp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/font_dimen_28" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_un_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen70"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/category_select_btn_delete_sharp" />
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/category_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:layout_toRightOf="@id/iv_2"
+                android:text="添加"
+                android:textColor="#33cc66"
+                android:textSize="@dimen/font_dimen_28" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0"
+        android:layout_weight="131"
+        android:paddingLeft="@dimen/dimen70"
+        android:paddingRight="@dimen/dimen70">
+
+
+        <LinearLayout
+            android:id="@+id/ll_right_error_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen80"
+                android:background="@drawable/movie_icon_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen50"
+                android:text="获取内容失败"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_48" />
+
+            <TextView
+                android:id="@+id/tv_right_error_content_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen20"
+                android:background="@drawable/retry_btn_sharp_default"
+                android:gravity="center"
+                android:text="点击重试"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_36" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_right_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen150"
+                android:src="@drawable/movie_loading01" />
+            <!--android:background="@anim/loading_anim" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen50"
+                android:text="全力加载中..."
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_48" />
+
+        </LinearLayout>
+
+
+        <com.songshu.squirrelvideo.view.PullToRefreshListView
+            android:id="@+id/lv_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/ss_transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/ss_transparent"
+            android:scrollbars="none"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

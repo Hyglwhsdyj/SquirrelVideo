@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/new_mediacontroller_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!-- 媒体控制顶部栏 -->
+
+        <RelativeLayout
+            android:id="@+id/new_mediacontroller_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80"
+            android:layout_alignParentTop="true"
+            android:background="#66000000">
+
+            <ImageButton
+                android:id="@+id/new_mediacontroller_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/ss_transparent"
+                android:paddingBottom="@dimen/dimen20"
+                android:paddingLeft="@dimen/dimen40"
+                android:paddingRight="@dimen/dimen40"
+                android:paddingTop="@dimen/dimen20"
+                android:src="@drawable/go_back_selector" />
+
+            <TextView
+                android:id="@+id/new_mediacontroller_video_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/new_mediacontroller_back_btn"
+                android:gravity="center"
+                android:text="测试视频标题"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_24" />
+
+        </RelativeLayout>
+
+        <!-- 媒体控制条底部栏 -->
+
+        <RelativeLayout
+            android:id="@+id/new_mediacontroller_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen130"
+            android:layout_alignParentBottom="true"
+            android:background="#66000000"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/new_mediacontroller_pause_start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/ss_transparent"
+                android:paddingBottom="@dimen/dimen15"
+                android:paddingLeft="@dimen/dimen40"
+                android:paddingRight="@dimen/dimen15"
+                android:paddingTop="@dimen/dimen15"
+                android:src="@drawable/media_controller_pause_selector" />
+
+            <SeekBar
+                android:id="@+id/new_mediacontroller_seekbar"
+                android:layout_width="@dimen/dimen588"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:layout_marginRight="@dimen/dimen20"
+                android:focusable="true"
+                android:max="1000"
+                android:maxWidth="@dimen/dimen30"
+                android:minHeight="@dimen/dimen30"
+                android:progressDrawable="@drawable/media_controller_seekbar_selector"
+                android:thumb="@drawable/movie_seekbar_point"
+                android:thumbOffset="@dimen/dimen15" />
+
+            <TextView
+                android:id="@+id/new_mediacontroller_video_time_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/new_mediacontroller_seekbar"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_18" />
+
+            <TextView
+                android:id="@+id/new_mediacontroller_video_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/new_mediacontroller_seekbar"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_18" />
+
+            <TextView
+                android:id="@+id/new_mediacontroller_episode_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen30"
+                android:gravity="center"
+                android:padding="@dimen/dimen20"
+                android:text="选集"
+                android:textColor="#fff"
+                android:textSize="@dimen/font_dimen_28"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <!-- 选集布局 -->
+
+        <RelativeLayout
+            android:id="@+id/new_mediacontroller_episode_layout"
+            android:layout_width="@dimen/dimen400"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/new_mediacontroller_bottom_layout"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/new_mediacontroller_top_layout"
+            android:layout_marginBottom="@dimen/dimen1"
+            android:layout_marginTop="@dimen/dimen1"
+            android:background="#ea000000"
+            android:visibility="gone">
+
+
+            <GridView
+                android:id="@+id/new_mediacontroller_episode_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="@dimen/dimen25"
+                android:listSelector="@color/ss_transparent"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/dimen20"
+                android:paddingRight="@dimen/dimen20"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dimen25" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 提示信息 -->
+
+    <TextView
+        android:id="@+id/new_mediacontroller_operation_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/font_dimen_32"
+        android:visibility="invisible" />
+
+</RelativeLayout>

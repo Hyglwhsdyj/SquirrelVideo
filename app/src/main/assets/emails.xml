@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addrs>
+    <from-list>
+        <item>
+            <account>yangbo@songshu.cc</account>
+            <password>ybbjlm1215</password>
+        </item>
+    </from-list>
+    <to-list>
+        <item>yangbo@songshu.cc</item>
+    </to-list>
+</addrs>
